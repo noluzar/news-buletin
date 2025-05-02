@@ -4,8 +4,8 @@ import Button from "./Button";
 const Navbar: React.FC = () => {
   return (
     <div className="">
-      <nav className="flex items-center justify-between p-8 bg-black text-white">
-        <div>Logo</div>
+      <nav className="md:flex items-center justify-between p-6 hidden bg-black text-white">
+      <p className="font-bold text-3xl">Buletin<span className="text-red-600">.</span></p>
         <div className="space-x-10">
           <a href="#">Home</a>
           <a href="#">Join Us</a>

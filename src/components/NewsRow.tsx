@@ -27,8 +27,8 @@ const NewsColumn: React.FC = () => {
   }, []);
 
   return (
-    <div className="grid grid-cols-4 gap-4">
-      {articles.slice(0, 4).map((article, index) => (
+    <div className="grid md:grid-cols-4 gap-4">
+      {articles.slice(6, 10).map((article, index) => (
         <div key={index}>
           <img src={article.urlToImage} className="w-full h-48 rounded" />
           <div>
