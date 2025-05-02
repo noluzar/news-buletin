@@ -14,10 +14,12 @@ type Article = {
 
 const WeeklyHighlight: React.FC = () => {
   const [articles, setArticles] = useState<Article[]>([]);
+  const apiKey = import.meta.env.VITE_NEWS_API_KEY;
+
 
   useEffect(() => {
     fetch(
-      "https://newsapi.org/v2/top-headlines?country=us&apiKey=38a4e1049c1a4803b20ce65468bcb902"
+      `https://newsapi.org/v2/top-headlines?country=us&apiKey=${apiKey}`
     )
       .then((res) => res.json())
       .then((data) => {
